@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Aventureiro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/popup-profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="home.html">
+                <img src="img/logotipo.png" alt="Twilight of the Gods" class="header-logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="quests.html">Quadro de Quests</a></li>
+                    <li><a href="leaders.html">Membros</a></li>
+                    <li><a href="register.html">Inscrição</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="img/user.png" alt="Avatar do Usuário" class="user-icon" id="profileIcon">
+                <div id="profilePopup" style="display: none;">
+                    <p id="profilePopupGold">GOLD: 0</p>
+                    <p id="profilePopupXP">XP: 0</p>
+                    <button onclick="window.location.href='profile.html'">Ver Perfil</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <!-- Conteúdo Principal -->
+        <main>
+            <div id="TituloQuestContainer">
+                <h2>Membros da Guilda</h2>
+            </div>
+            <div class="guild-members">
+                <div class="member">
+                    <img src="img/Elowen.png" alt="Membro 1" class="member-image">
+                    <p class="member-description">
+                        <strong>Nome:</strong> Elowen, a Feiticeira dos Ventos<br>
+                        <strong>Classe:</strong> Paladina<br>
+                        <strong>Especialidade:</strong> Magia Elemental
+                    </p>
+                </div>
+                <div class="member">
+                    <img src="img/Aentyr.png" alt="Membro 2" class="member-image">
+                    <p class="member-description">
+                        <strong>Nome:</strong> Aentyr, o Arauto de Ferro<br>
+                        <strong>Classe:</strong> Guerreiro<br>
+                        <strong>Especialidade:</strong> Combate Corpo a Corpo
+                    </p>
+                </div>
+                <div class="member">
+                    <img src="img/Kaelus.png" alt="Membro 3" class="member-image">
+                    <p class="member-description">
+                        <strong>Nome:</strong> Kaelus, os Gêmeos Estelares<br>
+                        <strong>Classe:</strong> Feiticeiros<br>
+                        <strong>Especialidade:</strong> Magia Celeste
+                    </p>
+                </div>
+            </div>
+        </main>    
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2024 Guilda dos Aventureiros. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+    </html>
+    

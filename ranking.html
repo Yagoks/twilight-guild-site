@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivelamento</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/popup-profile.js" defer></script>
+    <script src="scripts/ranking.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="home.html">
+                <img src="img/logotipo.png" alt="Twilight of the Gods" class="header-logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="quests.html">Quadro de Quests</a></li>
+                    <li><a href="leaders.html">Membros</a></li>
+                    <li><a href="register.html">Inscrição</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="img/user.png" alt="Avatar do Usuário" class="user-icon" id="profileIcon">
+                <div id="profilePopup" style="display: none;">
+                    <p id="profilePopupGold">GOLD: 0</p>
+                    <p id="profilePopupXP">XP: 0</p>
+                    <button onclick="window.location.href='profile.html'">Ver Perfil</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <main>
+            <div id="nivelamentoContainer">
+                <h2>Nivelamento</h2>
+                <div id="loadingStage">
+                    <p id="loadingText">Calculando seu Rank...</p>
+                    <img id="loadingImage" src="img/default-loading.jpg" alt="Carregando">
+                </div>
+                <h2></h2>
+                <div id="finalStage" class="hidden">
+                    <p id="finalText"></p>
+                    <img id="finalImage" src="" alt="Rank Final">
+                    <button id="toQuestsBtn" class="btn">Ir para Quests</button>
+                </div>
+            </div>
+        </main>
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2024 Guilda dos Aventureiros. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+    </html>
+    

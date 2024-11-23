@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para a Guilda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/register.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="home.html">
+                <img src="img/logotipo.png" alt="Twilight of the Gods" class="header-logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="quests.html">Quadro de Quests</a></li>
+                    <li><a href="leaders.html">Membros</a></li>
+                    <li><a href="register.html">Inscrição</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="img/user.png" alt="Avatar do Usuário" class="user-icon" id="profileIcon">
+                <div id="profilePopup" style="display: none;">
+                    <p id="profilePopupGold">GOLD: 0</p>
+                    <p id="profilePopupXP">XP: 0</p>
+                    <button onclick="window.location.href='profile.html'">Ver Perfil</button>
+                </div>                
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="form-container">
+            <form id="registrationForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="classe">Classe:</label>
+                <select id="classe" name="classe" required>
+                    <option value="Guerreiro">Guerreiro</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Patrulheiro">Patrulheiro</option>
+                    <option value="Clerigo">Clérigo</option>
+                    <option value="Paladino">Paladino</option>
+                    <option value="Ladino">Ladino</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
+                    <option value="Bruxo">Bruxo</option>
+                    <option value="Druida">Druida</option>
+                    <option value="Bárbaro">Bárbaro</option>
+                </select>
+
+                <label for="nivel">Nível:</label>
+                <input type="number" id="nivel" name="nivel" min="1" max="20" required>
+
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo">
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca" required>
+
+                <label for="anexo">Anexo (Imagem):</label>
+                <input type="file" id="anexo" name="anexo" accept=".png, .jpg, .jpeg, .gif, .webp">
+
+                <button type="submit" class="btn-confirmar">Confirmar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guilda dos Aventureiros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

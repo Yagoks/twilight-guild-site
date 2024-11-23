@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Aventureiro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/profile.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="home.html">
+                <img src="img/logotipo.png" alt="Twilight of the Gods" class="header-logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="quests.html">Quadro de Quests</a></li>
+                    <li><a href="leaders.html">Membros</a></li>
+                    <li><a href="register.html">Inscrição</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="img/user.png" alt="Avatar do Usuário" class="user-icon" id="profileIcon">
+                <div id="profilePopup" style="display: none;">
+                    <p id="profilePopupGold">GOLD: 0</p>
+                    <p id="profilePopupXP">XP: 0</p>
+                    <button onclick="window.location.href='profile.html'">Ver Perfil</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <main>
+        <div class="profile-container">
+            <h2>Informações do Aventureiro</h2>
+            <img id="profileImage" alt="Imagem do Perfil" class="profile-image">
+            <p><strong>Nome:</strong> <span id="profileNome"></span></p>
+            <p><strong>Classe:</strong> <span id="profileClasse"></span></p>
+            <p><strong>Nível:</strong> <span id="profileNivel"></span></p>
+            <p><strong>Título:</strong> <span id="profileTitulo"></span></p>
+            <p><strong>Data de Nascimento:</strong> <span id="profileDataNascimento"></span></p>
+            <p><strong>Gênero:</strong> <span id="profileGenero"></span></p>
+            <p><strong>Raça:</strong> <span id="profileRaca"></span></p>
+            <p><strong>Rank:</strong> <span id="profileRank"></span></p>
+            <h3>Recursos</h3>
+            <p><strong>XP:</strong> <span id="profileXP"></span></p>
+            <p><strong>Gold:</strong> <span id="profileGold"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guilda dos Aventureiros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

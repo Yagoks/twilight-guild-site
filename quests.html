@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Quests</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/quest.js" defer></script>
+    <script src="scripts/popup-profile.js" defer></script> 
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="home.html">
+                <img src="img/logotipo.png" alt="Twilight of the Gods" class="header-logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="quests.html">Quadro de Quests</a></li>
+                    <li><a href="leaders.html">Membros</a></li>
+                    <li><a href="register.html">Inscrição</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="img/user.png" alt="Avatar do Usuário" class="user-icon" id="profileIcon">
+                <div id="profilePopup" style="display: none;">
+                    <p id="profilePopupGold">GOLD: 0</p>
+                    <p id="profilePopupXP">XP: 0</p>
+                    <button onclick="window.location.href='profile.html'">Ver Perfil</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <!-- Conteúdo Principal -->
+        <main>
+            <div class="item">
+                <div id="TituloQuestContainer">
+                    <h2>Quests Disponíveis</h2>
+                </div>
+                <div id="questList"></div>
+            </div>
+        </main>
+        
+
+     
+    
+            <!-- Popup de Detalhes da Quest -->
+            <div id="questPopup" class="popup hidden">
+                <div class="popup-content">
+                    <h3 id="questTitle">Título da Quest</h3>
+                    <p><strong>Rank:</strong> <span id="questRank"></span></p>
+                    <p><strong>Recompensa:</strong> <span id="questReward"></span> Gold, <span id="questXP"></span> XP</p>
+                    <p><strong>Descrição:</strong> <span id="questDescription"></span></p>
+                    <button id="acceptQuestBtn" class="btn">Aceitar</button>
+                    <button id="closePopupBtn" class="btn">Recusar</button>                    
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Guilda dos Aventureiros. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+    </html>
+    
+    
+    

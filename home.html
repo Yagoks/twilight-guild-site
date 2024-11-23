@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilight of the Gods</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/popup-profile.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-content">
+            <a href="home.html">
+                <img src="img/logotipo.png" alt="Twilight of the Gods" class="header-logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="quests.html">Quadro de Quests</a></li>
+                    <li><a href="leaders.html">Membros</a></li>
+                    <li><a href="register.html">Inscrição</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="img/user.png" alt="Avatar do Usuário" class="user-icon" id="profileIcon">
+                <div id="profilePopup" style="display: none;">
+                    <p id="profilePopupGold">GOLD: 0</p>
+                    <p id="profilePopupXP">XP: 0</p>
+                    <button onclick="window.location.href='profile.html'">Ver Perfil</button>
+                </div>                
+            </div>
+        </div>
+    </header>
+
+
+    <!-- carousel -->
+
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="img/lideres.jpg">
+                    <div class="content">
+                        <div class="author">Membros</div>
+                        <div class="title">Conheça os chefes da</div>
+                        <div class="topic">TWILIGHT</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Clique em saber mais para conhecer os membros mais importantes da guilda.
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href='ranking.html'">SAIBA MAIS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/inscricao.jpg">
+                    <div class="content">
+                        <div class="author">Inscrição</div>
+                        <div class="title">Faça sua </div>
+                        <div class="topic">INSCRIÇÃO</div>
+                        <div class="des">
+                            Faça sua inscrição na Guilda, converse com a Tina, a secretária da guilda.
+                            Após isso você poderá saber se esta qualificado para receber nossas missões!
+                            Clique no botão abaixo para descobrir se está elegível.
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href='register.html'">INSCREVER</button>
+                            <button onclick="window.location.href='ranking.html'">RANK</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/quest.jpg">
+                    <div class="content">
+                        <div class="author">Quests</div>
+                        <div class="title">Aventure-se escolha sua</div>
+                        <div class="topic">QUEST</div>
+                        <div class="des">
+                            Acesse o botão abaixo para acessar nosso mural de quests,
+                            lembrando que você deve ter feito seu rakeamento antes para poder escolher uma
+                            de nossas quests. Isso Facilitará sua jornada!
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href='quests.html'">QUESTS</button>
+                            <button onclick="window.location.href='ranking.html'">RANK</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/Ranking.jpg">
+                    <div class="content">
+                        <div class="author">Rank</div>
+                        <div class="title">Acesse nossa página de</div>
+                        <div class="topic">Ranking</div>
+                        <div class="des">
+                            Acesse o botão abaixo para realizar nossos sistema de Nivelamento para que voce possa,
+                            acessar nossas quest e receber diversas recompensas. Você deve estar inscrito primeiro para
+                            poder
+                            ser rankeado!
+                        </div>
+                        <div class="buttons">
+                            <button onclick="window.location.href='ranking.html'">RANK</button>
+                            <button onclick="window.location.href='register.html'">INSCREVER</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="arrows">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="img/thumb-lideres.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Membros
+                        </div>
+                        <div class="description">
+                            Membros da Twilight
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/thumb-inscrição.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Inscrição
+                        </div>
+                        <div class="description">
+                            Faça sua inscrição.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/thumb-quest.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Mural de Quest
+                        </div>
+                        <div class="description">
+                            Acesse nosso moral de Quest!
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/thumb-Ranking.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Ranking
+                        </div>
+                        <div class="description">
+                            Acesse nossa pagina de Rank
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2024 Guilda dos Aventureiros. Todos os direitos reservados.</p>
+        </footer>
+</body>
+
+</html>
